@@ -1,0 +1,5 @@
+main = "src/index.ts"
+compatibility_date = "2024-11-19"
+
+[vars]
+POLYGON_API_KEY = "your_actual_api_key_here"
