@@ -183,3 +183,25 @@ button:hover {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
 }
+.social-icons {
+    position: absolute; /* Allows precise placement */
+    font-size: 1.5rem;
+    top: 20px; /* Adjust distance from the top */
+    right: 20px; /* Adjust distance from the right */
+    display: flex; /* Aligns icons horizontally */
+    gap: 10px; /* Spacing between icons */
+    transition: transform 0.2s ease-in-out;
+    color: #fff;
+}
+
+.social-icons a {
+    font-size: 1.5rem; /* Size of emojis/icons */
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* Adjust the color to match your theme */
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+    color: #7a2820; /* Change color on hover to match your theme */
+}
