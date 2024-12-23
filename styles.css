@@ -1,0 +1,185 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #7a2820;
+    margin: 0;
+    padding: 0;
+    background-color: #7a2820;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #7a2820;
+}
+
+header, nav, ul {
+    border: none;
+}
+/* Header Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr.divider {
+    display: none; /* Completely hides the divider */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #7a2820; /* Red background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 70px 20px;
+    margin: 0;
+    margin-bottom: 0;
+}
+
+header .logo img {
+    width: 700px;
+    margin-bottom: 5px;
+    margin-top: 40px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin: 0;
+    line-height: 1.8;
+}
+
+/* Divider Styling */
+.divider {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+/* Section Styling */
+section {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #fff; /* White background */
+    color: #333;
+    border-radius: 10px;
+    margin-top: 0;
+}
+section h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #7a2820;
+}
+section p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+/* Row and Column Layouts */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+.column {
+    flex: 1;
+    padding: 10px;
+}
+/* History and Ideas Images */
+.history-image, .ideas-image {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.history h2, .ideas h2 {
+    text-align: center; 
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-family: "Georgia", serif;
+    margin-bottom: 15px;
+    color: #7a2820;
+}
+
+.history p, .ideas p {
+    line-height: 1.8;
+    text-align: justify;
+    font-size: 1rem;
+    font-family: "Georgia", serif;
+}
+/* Gallery Styling */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 15px;
+    padding: 20px;
+}
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Navigation Styling */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #7a2820;; /* Matches white background */
+    padding: 0px;
+    margin: 0;
+    border: none;
+    list-style: none;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+nav a {
+    text-decoration: none;
+    color: #fff; /* White text */
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #7a2820; /* Red on hover */
+}
+/* Buttons */
+button {
+    background-color: transparent;
+    border: 2px solid #333;
+    color: #7a2820;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: #333;
+    color: #fff;
+}
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}

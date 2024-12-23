@@ -4,206 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bolo de Rolo & Só!</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            align-items: center;
-        }
-
-        .column {
-            flex: 1;
-            padding: 10px;
-        }
-
-        .history-image, .ideas-image {
-            width: 100%;
-            border-radius: 10px;
-            object-fit: cover;
-        }
-
-        .history h2, .ideas h2 {
-            text-align: center; 
-            font-size: 1.8rem;
-            text-transform: uppercase;
-            font-family: "Georgia", serif;
-            margin-bottom: 15px;
-            color: #7a2820;
-        }
-
-        .history p, .ideas p {
-            line-height: 1.8;
-            text-align: justify;
-            font-size: 1rem;
-            font-family: "Georgia", serif;
-        }
-
-        header {
-            background-color: #7a2820;
-            color: #fff;
-            text-align: center;
-            padding: 70px 20px;
-        }
-        header .logo img {
-            width: 700px;
-            margin-bottom: 5px; 
-        }
-
-        header h1 {
-            font-size: 3rem;
-            margin-bottom: 5px 0;
-            font-weight: bold;
-        }
-
-        header p {
-            font-size: 1.5rem;
-            margin: 0; 
-            padding: 0;
-            line-height: 1.8;
-        }
-
-        .divider {
-            display: none; 
-        }
-
-        p, hr {
-            margin: 0;
-            padding: 0;
-        }
-
-        section {
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 800px;
-            background-color: #fff;
-            color: #333;
-            border-radius: 10px;
-        }
-
-        section h2 {
-            text-align: center;
-            font-size: 1.8rem;
-            color: #7a2820;
-        }
-
-        section p {
-            font-size: 1rem;
-            line-height: 1.5;
-        }
-
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
-        }
-
-        .gallery img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 5px;
-        }
-
-        button {
-            background-color: transparent;
-            border: 2px solid #333;
-            color: #333;
-            font-size: 1rem;
-            font-weight: bold;
-            padding: 10px 20px;
-            border-radius: 30px;
-            text-transform: uppercase;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #333;
-            color: #fff;
-        }
-
-        @media screen and (max-width: 768px) {
-    .row {
-        flex-direction: column;
-    }
-}
-         @media screen and (max-width: 768px) {
-            .gallery {
-                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));;
-         }
-        }
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
-    gap: 15px; /* Spacing between images */
-    padding: 20px; /* Add some padding around the gallery */
-}
-
-.gallery img {
-    width: 100%; /* Make the image take full width of its container */
-    height: auto; /* Set a fixed height for uniform sizing */
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-                <header>
-                    <div class="logo">
-                        <img src="Logo.webp" alt="Bolo de Rolo Logo">
-                    </div>
-                    <h1>Bolo de Rolo & só!</h1>
-                    <p>Aqui você encontra o bolo de rolo da Anca, <br> a gringa mais brasileira do mundo! 🎉</p>
-                </header>                
+    <!-- Combined Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="videos.html">Videos</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="Logo.webp" alt="Bolo de Rolo Logo">
+        </div>
+        <h1>Bolo de Rolo & só!</h1>
+        <p>Aqui você encontra o bolo de rolo da Anca, <br> a gringa mais brasileira do mundo! 🎉</p>
+    </header>
+
+    <!-- Divider -->
     <hr class="divider">
 
-    <section>
-        </section>
-        <section class="history">
+    <!-- History Section -->
+    <section class="history">
         <div class="row">
-        <div class="column">
-    <img src="bolochocolate.webp" alt="|Bolo de Rolo Chocolate" class="history-image"> 
-    </div>
-
-        <div class="column">
-        <h2>A minha história</h2>
-        <p>
-            Tudo começou na pandemia - quando ouvi pela primeira vez sobre o bolo de rolo (o meu marido sonhando com o bolo de rolo!) Para agradar o marido, fui na Internet atrás da receita - o processo de aprendizagem demorou 8 meses (fazendo ou tentando fazer bolo de rolo quase todos os dias) até finalmente acertar essa iguaria de camadas finíssimas que hoje tá disponível para você se deliciar também!
-        </p>
-        <button onclick="window.location.href='https://open.spotify.com/episode/6W5EJb3hnu3G8i3P811jGO?si=rjmttCB3Si-Q3uCgQyXacQ&nd=1&dlsi=16ce741943f54e07'">
-            Escuta o Podcast
-        </button>
-        </div>
-    </div>
-    </section>
-
-       <section class="ideas">
-         <h2>Dicas</h2>
-         <div class="row">
             <div class="column">
-        <p>
-            O bolo de rolo é muito especial, e tem todo um processo na hora de cortar, servir e guardar. É importante usar uma faca afiada na hora de cortar (evitar facas cegas ou de serra); o bolo de rolo pode ficar em temperatura ambiente até 5 dias, na geladeira até 2 semanas e congelado até 3 meses. Para servir o seu bolo de rolo, tem várias opções: com sorvete, com queijo ou de maneira original e simples. De todo jeito, o bolo de rolo é bom demais!
-        </p>
+                <img src="bolochocolate.webp" alt="|Bolo de Rolo Chocolate" class="history-image">
+            </div>
+            <div class="column">
+                <h2>A minha história</h2>
+                <p>
+                    Tudo começou na pandemia - quando ouvi pela primeira vez sobre o bolo de rolo (o meu marido sonhando com o bolo de rolo!) Para agradar o marido, fui na Internet atrás da receita - o processo de aprendizagem demorou 8 meses (fazendo ou tentando fazer bolo de rolo quase todos os dias) até finalmente acertar essa iguaria de camadas finíssimas que hoje tá disponível para você se deliciar também!
+                </p>
+                <button onclick="window.location.href='https://open.spotify.com/episode/6W5EJb3hnu3G8i3P811jGO?si=rjmttCB3Si-Q3uCgQyXacQ&nd=1&dlsi=16ce741943f54e07'">
+                    Escuta o Podcast
+                </button>
+            </div>
         </div>
-        <div class="column">
-        <img src="boloddl.webp" alt="Bolo de rolo doce de leite" class="ideas-image" style="width:100%; border-radius: 10px;">
-        </div>
-    </div>
     </section>
 
+    <!-- Ideas Section -->
+    <section class="ideas">
+        <h2>Dicas</h2>
+        <div class="row">
+            <div class="column">
+                <p>
+                    O bolo de rolo é muito especial, e tem todo um processo na hora de cortar, servir e guardar. É importante usar uma faca afiada na hora de cortar (evitar facas cegas ou de serra); o bolo de rolo pode ficar em temperatura ambiente até 5 dias, na geladeira até 2 semanas e congelado até 3 meses. Para servir o seu bolo de rolo, tem várias opções: com sorvete, com queijo ou de maneira original e simples. De todo jeito, o bolo de rolo é bom demais!
+                </p>
+            </div>
+            <div class="column">
+                <img src="boloddl.webp" alt="Bolo de rolo doce de leite" class="ideas-image" style="width:100%; border-radius: 10px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
     <section>
         <h2>Bolo de rolo</h2>
-        <section class="gallery">
+        <div class="gallery">
             <img src="bolobaunilha.webp" alt="Bolo Baunilha">
             <img src="ovopascoa.webp" alt="Ovo de Páscoa">
             <img src="nakednutella.webp" alt="Naked Nutella">
