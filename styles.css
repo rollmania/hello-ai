@@ -242,3 +242,19 @@ button:hover {
     border: 2px solid #000; /* Optional: Add a border */
     border-radius: 8px; /* Optional: Add rounded corners */
 }
+
+video {
+    width: 100%; /* Make the video responsive within its container */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #000; /* Optional: Add a border for better visibility */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+.video-section {
+    margin-top: 20px;
+    text-align: center; /* Center-align the video */
+}
+.video-section video {
+    max-width: 800px; /* Limit the maximum width of the video */
+    border: 2px solid #000; /* Optional: Add a border */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
