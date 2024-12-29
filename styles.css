@@ -5,12 +5,13 @@ body {
     margin: 0;
     padding: 0;
     background-color: #7a2820;
+    ;
 }
 html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #7a2820;
+    background-color: #b7a09e;
 }
 
 header, nav, ul {
@@ -258,3 +259,113 @@ video {
     border: 2px solid #000; /* Optional: Add a border */
     border-radius: 8px; /* Optional: Add rounded corners */
 }
+.module-classes {
+    display: none; /* Hide by default */
+    padding-left: 20px;
+    list-style-type: none;
+  }
+  
+  .module.open .module-classes {
+    display: block; /* Show when parent has 'open' class */
+  }
+  
+  .module-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+
+    /* New: Adjust max-width */
+    max-width: calc(100% - 20px); /* Account for padding */
+}
+
+  /* Layout Styling */
+.layout {
+        display: flex; /* Create a flex container */
+        align-items: flex-start; /* Align items at the top */
+    }
+  
+  /* Sidebar Menu */
+  .menu {
+    width: 100%; /* Allow full width usage */
+    flex: 0 0 auto;
+    max-width: 500px; /* Restrict maximum width for a cleaner look */
+    margin: 0; /* Remove auto-centering */
+    padding: 10px; /* Add padding inside the menu */
+    box-sizing: border-box; /* Include padding in width/height calculations */
+    position: relative; /* Position the menu relative to its container */
+    left: 0; /* Align it to the left */
+    background-color: transparent; /* Transparent background to blend in */
+}
+
+  .module {
+    background-color: #fff; /* White background for each module */
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    box-sizing: border-box; 
+    margin-bottom: 15px; /* Spacing between modules */
+    width: 100%;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex-grow: 1; /* Take the remaining space */
+    padding: 20px;
+    background-color: #f7f7f7; /* Light background for content */
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  }
+  
+  /* Module Header */
+  .module-header {
+    display: flex;
+    justify-content: space-between; /* Distribute text and status evenly */
+    align-items: center; /* Vertically align content */
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #f7f7f7; /* Light header background */
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis for long text */
+    max-width: 100%; /* Ensure it doesn't exceed the menu's width */
+    box-sizing: border-box; /* Include padding in width */
+}
+.module-header span {
+    flex-grow: 1; /* Allow the span to grow and occupy available space */
+    margin-right: 10px; /* Add space between the text and completion status */
+    min-width: 0; /* Prevent shrinking issues */
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+  /* Module Classes */
+  .module-classes {
+    display: none;
+    padding-left: 20px;
+    list-style: none;
+    margin-top: 10px;
+  }
+  .module-classes {
+    display: none;
+    padding-left: 20px;
+    list-style: none;
+    margin-top: 10px;
+  }
+  
