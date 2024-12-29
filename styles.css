@@ -397,7 +397,8 @@ video {
   }
   
   body.aulas-page {
-    background-image: url('logored.PNG'); /* Your logo image */
+    background-image: url('logored.PNG');
+    /* Your logo image */
     background-size: cover; /* Ensures the image covers the whole page */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-position: center; /* Centers the image */
