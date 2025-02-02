@@ -17,6 +17,19 @@
       gtag('config', 'G-G0H2XJYH78');
     </script>
 
+    <!-- Click Tracking Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          document.querySelectorAll("a").forEach(link => {
+              link.addEventListener("click", function() {
+                  gtag("event", "click", {
+                      "event_category": "engagement",
+                      "event_label": this.href
+                  });
+              });
+          });
+      });
+    </script>
 </head>
 <body>
     <!-- Combined Header -->
